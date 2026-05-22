@@ -32,11 +32,28 @@ Multiple personas are supported. Switch between them by asking "write for [name]
 
 ## How it works
 
-Each session starts with a **Weekly Extraction** interview: 6 questions about what you shipped, observed, experienced, and reacted to in the past 7 days. The skill maps your answers into 3–4 post ideas with hooks and angles, then drafts each one in order.
+### Step 1 — The interview
 
-You write the final posts yourself. The skill gives you a starting point.
+The skill asks you 6 questions about the past 7 days: what you shipped, any team news, a work challenge, something from outside work, a reaction to something in your industry, and anything worth reposting. One question at a time. It probes for specifics — generic answers produce generic posts.
 
-## Weekly content mix
+### Step 2 — Content ideas
+
+From your answers it generates 5 structured content ideas. For each one it identifies:
+
+- **Content type** — Contrarian Take, Case Study, Tactical How-To, Personal/Vulnerable, Curation, or Observation
+- **Weekly slot** — which of the 5 post types it fits (company culture, personal brand, industry landscape, repost, product)
+- **Post strategy** — whether the post should build authority (Perspective), demonstrate results (Proof), or drive action (Promo)
+- **Content goal** — thought leadership, audience growth, engagement, or save-worthy
+
+These four dimensions together determine what kind of hook will work and how the post should be written. The skill then picks the best 3–4 ideas and proposes a week plan.
+
+### Step 3 — Hook generation and drafting
+
+For each post in the plan, the skill generates 5 hook variants — one per psychological lever — matched to the post's content goal. You pick the hook, then the skill drafts the full post (hook + body + close) in the persona's voice.
+
+You write the final posts yourself. The skill gives you the starting point.
+
+## The 5 weekly slots
 
 | # | Type | What it covers |
 |---|---|---|
@@ -46,29 +63,9 @@ You write the final posts yourself. The skill gives you a starting point.
 | 4 | Repost | Useful resources, ICP posts worth amplifying |
 | 5 | Product | Launches, new features, articles, carousels |
 
-## Post strategy
+## The 5 psychological levers
 
-Every post is classified as one of three types, each serving a different role:
-
-- **Perspective** — builds authority through lived experience and opinions. No pitch. Maps to personal brand and industry landscape slots.
-- **Proof** — builds trust through specific results, case studies, before/afters. Maps to product and company culture slots.
-- **Promo** — direct CTA for when there's something to push. Used sparingly.
-
-The weekly plan targets 2 Perspective + 2 Proof + 1 flexible slot.
-
-## How hooks are generated
-
-Every post starts with 5 hook variants. Each uses a different psychological lever, matched to the goal of that post.
-
-**The 3 brain gates**
-
-A LinkedIn hook has ~300ms to pass three filters before the reader scrolls past:
-
-1. **Pattern recognition (0–100ms)** — Does this look like marketing? Generic tone and templates trigger instant dismissal.
-2. **Identity match (100–200ms)** — Is this for someone like me? The strongest hooks hit a shared worldview, not just a job title.
-3. **Value prediction (200–300ms)** — Is reading this worth the effort? Loss framing and curiosity gaps work here — they signal the cost of *not* reading is higher than the cost of reading.
-
-**The 5 levers**
+Every hook must pass 3 brain gates in the first 300ms of reading — pattern recognition, identity match, and value prediction. The 5 levers are the mechanisms for clearing them:
 
 | Lever | Mechanism | Example pattern |
 |---|---|---|
@@ -78,7 +75,7 @@ A LinkedIn hook has ~300ms to pass three filters before the reader scrolls past:
 | Pattern Interrupt | Contradicts the expected take on a familiar topic | "[Conventional wisdom]. [One-sentence reframe]." |
 | Competence Signal | Promises a framework that makes the complex manageable | "Here's how I [hard thing] in [specific way]." |
 
-Each variant is labeled by identity depth — Surface (job title), Social (shared struggles), or Core (values/worldview). Most hooks only hit Surface. The skill flags when a hook is stuck there.
+Each variant is labeled by identity depth — Surface (job title), Social (shared struggles), or Core (values/worldview). The skill flags when a hook is stuck at Surface.
 
 ## Credits
 
