@@ -40,7 +40,8 @@ If the file does not exist, run the **persona creation flow**:
 > 2. What's their role? (e.g. Founder & CEO, Head of Marketing)
 > 3. What's their company and what does it do? (e.g. Acme — B2B SaaS for HR teams)
 > 4. Who's their LinkedIn audience? (e.g. HR leaders and SaaS founders)
-> 5. What are their main content angles? (e.g. founder journey, product launches, AI takes)"
+> 5. What are their main content angles? (e.g. founder journey, product launches, AI takes)
+> 6. Do they write in English but think in another language? If yes, which ones? (e.g. Italian, Spanish — this helps capture the personality that gets lost in translation)"
 
 Ask all five questions at once. Wait for answers, then:
 - Derive a slug from their first name (lowercase, no spaces): e.g. "Sarah Chen" → `sarah`
@@ -65,6 +66,12 @@ If the file does not exist (new persona), ask:
 
 If they share samples, extract voice & style patterns and save them under `## Voice & Style Notes`. If they skip, create the file with empty sections so it's ready for confirmed posts.
 
+**If native languages are set**, run the personality calibration after the English samples step:
+
+> "One more thing — since [name] writes in English but thinks in [language(s)], I want to capture their natural voice too. Can you write 2-3 sentences in [Italian/Spanish] about: how you'd describe your work to a friend, and something that annoyed or amused you this week? Don't overthink it — just write it how you'd say it."
+
+If they provide the input, extract personality anchors and save them under `## Personality Anchors`. If they skip, leave the section empty — it can be filled later when they say "this doesn't sound like me."
+
 Do not repeat this check on subsequent invocations in the same session.
 
 ---
@@ -82,10 +89,13 @@ Path: `~/linkedin-memory-[slug].md`
 - **Company:** [Company name and what it does]
 - **Audience:** [Primary LinkedIn audience]
 - **Content focus:** [Key angles and topics]
+- **Native languages:** [e.g. Italian, Spanish — or "English only"]
 
 ## Voice & Style Notes
-<!-- Extracted from writing samples. Updated when new samples are shared. -->
+<!-- Extracted from English writing samples. Updated when new samples are shared. -->
 
+## Personality Anchors
+<!-- Extracted from native-language inputs. Captures the humor, directness, irony, and rhythm that get lost when writing in English. Used as a reference during drafting to rescue flat lines. -->
 
 ## Confirmed Posts
 <!-- Appended after each post the user confirms as done. -->
@@ -108,6 +118,16 @@ Use today's date. Always append — never overwrite existing entries.
 
 **When new samples are shared mid-session:**
 Extract additional patterns and merge them into `## Voice & Style Notes`.
+
+**Populating Personality Anchors (native language personas only):**
+If the persona has native languages set, extract anchors from their native-language inputs. Focus on:
+- **Humor style** — dry, warm, self-deprecating, absurdist?
+- **Directness** — do they get to the point fast or build up to it?
+- **Irony** — do they use it, and how? (Italian and Spanish irony read differently)
+- **Rhythm** — short bursts or longer flowing sentences?
+- **Recurring turns of phrase** — expressions, openers, or closers that feel distinctly them
+
+Write anchors as specific, usable observations — not "is direct" but "drops the punchline before the setup, no wind-up."
 
 ---
 
@@ -320,8 +340,13 @@ Default tone by post type unless the persona specifies otherwise:
 
 After sharing the draft:
 - Ask if the tone, hook, or body needs adjusting
+- **If the persona has native languages set**, run a personality check before asking for approval: scan the draft for 1-2 lines that feel "translated" — grammatically correct but too safe, too complete, or missing the energy the persona has in their native tongue. Flag them specifically:
+  > "This line reads a bit flat to me: *[line]*. How would you say this in Italian/Spanish?"
+  Use their response to rewrite the line — keep the English, adopt the energy. If the whole draft already feels alive, skip this step silently.
 - When the user approves, save it to the persona's memory file under `## Confirmed Posts` with today's date and post type
 - Then immediately move to the next post: "Post [N] done. Ready for post [N+1]? Here's what we planned: [slot] — [hook]"
+
+**Voice rescue trigger:** If the user says "this doesn't sound like me", "too formal", or "too polished" at any point, do not rewrite the whole post. Instead pick the 2-3 flattest lines, ask for the native-language version of each, and use the responses to patch just those lines.
 
 Keep momentum. The goal is to exit the session with 3-4 drafted posts, not 1 polished one.
 

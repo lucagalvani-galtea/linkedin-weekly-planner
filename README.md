@@ -18,15 +18,18 @@ Type `/linkedin-weekly-planner` or say "help me brainstorm my LinkedIn week" in 
 
 On first run the skill builds a persona profile — this is how it learns who you're writing for and how to sound like them.
 
-It asks 5 questions:
+It asks 6 questions:
 
 1. Who are we writing for?
 2. What's their role?
 3. What's their company and what does it do?
 4. Who's their LinkedIn audience?
 5. What are their main content angles?
+6. Do they write in English but think in another language? (e.g. Italian, Spanish)
 
 Answers are saved to `~/linkedin-memory-[name].md`. You can also paste existing LinkedIn posts or writing samples — the skill extracts voice and style patterns (sentence rhythm, word choices, structural habits) and uses them when drafting.
+
+If a native language is set, the skill runs a one-time personality calibration: it asks for a few sentences in that language to capture the humor, directness, and rhythm that get lost in translation. These anchors are stored as **Personality Anchors** and used to rescue flat lines during drafting.
 
 Multiple personas are supported. Switch between them by asking "write for [name] instead" or add a new one with "add a persona." The active persona is tracked in `~/linkedin-persona`.
 
