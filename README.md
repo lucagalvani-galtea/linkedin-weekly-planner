@@ -7,7 +7,7 @@ Most people think they have nothing to post about. They just don't know where to
 ## Install
 
 ```bash
-npx skills add github:lucagalvani-galtea/linkedin-skill
+npx skills add github:lucagalvani-galtea/linkedin-weekly-planner
 ```
 
 ## Usage
