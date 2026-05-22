@@ -1,4 +1,4 @@
-# linkedin-posts
+# linkedin-weekly-planner
 
 A Claude Code skill that interviews you about your week and turns it into LinkedIn post ideas.
 
@@ -12,7 +12,7 @@ npx skills add github:lucagalvani-galtea/linkedin-weekly-planner
 
 ## Usage
 
-Type `/linkedin-posts` or say "help me write a LinkedIn post" in Claude Code.
+Type `/linkedin-weekly-planner` or say "help me brainstorm my LinkedIn week" in Claude Code.
 
 ## Persona setup
 
